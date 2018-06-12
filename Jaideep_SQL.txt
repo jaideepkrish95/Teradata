@@ -1,0 +1,14 @@
+1. select title from Movie where director = "Steven Spielberg"
+
+2. select year from Movie, Rating where stars in (4, 5) and Movie.mID=Rating.mID 
+   order by stares
+
+3. select title from Movie, Rating where stars is null and Movie.mID=Rating.mID
+
+4. select name from Reviewer, Rating where ratingDate is null and Reviewer.rID=Rating.rID
+
+5. select name, title, stars, ratingDate from Movie, Reviewer, Rating where 
+   Movie.mID=Rating.mID and Reviewer.rID=Rating.rID order by name, title, stars 
+
+6. select name, title from Movie, Reviewer, Rating where
+   Movie.mID=Rating.mID and Reviewer.rID=Rating.rID - incomplete 
